@@ -20,5 +20,4 @@ Here are some ideas to get you started:
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="dist/github-snake-dark.svg" />
   <img alt="Contribution Snake" src="dist/github-snake.svg" />
-  ![Contribution Snake](https://github.com/GGhostBear-dev/GGhostBear-dev/blob/output/github-contribution-grid-snake.svg)
 </picture>
