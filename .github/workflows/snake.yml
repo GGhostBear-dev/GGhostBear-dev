@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          persist-credentials: false
 
       - name: Generate Snake animation
         uses: Platane/snk@v3
@@ -18,10 +20,16 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
           outputs: dist/github-snake.svg
 
-      - name: Push to output branch
-        uses: crazy-max/ghaction-github-pages@v3
-        with:
-          target_branch: output
-          build_dir: dist
+      - name: Setup Git
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+      - name: Commit and push
+        run: |
+          git checkout -b output
+          git add -A
+          git commit -m "Generated snake animation"
+          git push -f origin output
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
