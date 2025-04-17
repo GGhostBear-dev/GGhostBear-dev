@@ -1,5 +1,7 @@
 ## Hi there im GGhostBear, can we be friends? 👋
 
+<body> <h1> GGhostBear </h1> </body>
+
 <!--
 **GGhostBear-dev/GGhostBear-dev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
