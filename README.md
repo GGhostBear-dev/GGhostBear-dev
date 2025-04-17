@@ -1,5 +1,13 @@
 ## Hi there im GGhostBear, can we be friends? 👋
 
+<head> 
+  <style>
+    h1 {
+      Background : blue;
+    }
+  </style>
+</head>
+
 <body> <h1> GGhostBear </h1> </body>
 
 <!--
